@@ -20,19 +20,19 @@ class Storage {
     #items;
 
     constructor(initialItems) {
-        this.#items = initialItems;
+    this.#items = initialItems;
     }
 
     getItems () {
-        return this.#items;
+    return this.#items;
     }
 
     addItem(newItem) {
-        this.#items.push(newItem) ;
+    this.#items.push(newItem) ;
     }
-     removeItem(itemToRemove) {
-        this.#items = this.#items.filter(item => item !== itemToRemove);
-     }
+    removeItem(itemToRemove) {
+    this.#items = this.#items.filter(item => item !== itemToRemove);
+    }
 }
 
 
@@ -48,6 +48,6 @@ console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 storage.removeItem("Scaner");
 console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
-// Залиш цей код для перевірки ментором.
+
 
 

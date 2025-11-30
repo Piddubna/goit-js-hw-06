@@ -1,10 +1,8 @@
 // Виконуй це завдання у файлі task-3.js
 
-
 // Напиши клас StringBuilder, який приймає один параметр 
-// initialValue — довільний рядок, який записується у приватну властивість value об'єкта, що створюється.
-
-
+// initialValue — довільний рядок, який записується у приватну властивість value об'єкта,
+//  що створюється.
 
 // Оголоси наступні методи класу:
 
@@ -23,18 +21,18 @@ class StringBuilder {
     #value;
 
     constructor(initialValue) {
-        this.#value = initialValue;
+    this.#value = initialValue;
     }
 
     getValue() {
-        return this.#value;
+    return this.#value;
     }
 
     padEnd(str)  {
-        this.#value = this.#value + str ;
+    this.#value = this.#value + str ;
     }
     padStart(str) {
-        this.#value = str + this.#value ;
+    this.#value = str + this.#value ;
     }
 
     padBoth(str) {
@@ -52,8 +50,6 @@ builder.padBoth("=");
 console.log(builder.getValue()); // "=^.^="
 
 // Залиш цей код для перевірки ментором.
-
-
 
 // На що буде звертати увагу ментор при перевірці:
 
